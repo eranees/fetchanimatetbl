@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Example</title>
+  <style>
+    #myTable {
+      border: 1px solid black;
+      border-collapse: collapse;
+      font-size: 25px;
+    }
+
+    #myTable tr,
+    td,
+    th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    #myTable tbody tr:nth-child(even) {
+      background-color: rgb(186, 154, 210);
+    }
+
+    #myTable tbody tr:hover {
+      background-color: rgb(207, 210, 154);
+      cursor: pointer;
+    }
+
+    @keyframes mymove {
+      50% {
+        font-size: 40px;
+      }
+    }
+
+    #myTable tr td,
+    th {
+      text-align: left;
+    }
+  </style>
+</head>
+<table id="myTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody id="tblData">
+
+  </tbody>
+</table>
+
+<body>
+  <script src="script2.js"></script>
+</body>
+
+</html>
